@@ -38,6 +38,6 @@ public class Book {
 
     @Override
     public String toString(){
-        return "Название книги - " + bookName;
+        return "Название книги -" + bookName;
     }
 }

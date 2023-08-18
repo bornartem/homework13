@@ -32,6 +32,6 @@ public class Author {
 
     @Override
     public String toString(){
-        return "Автор книги - " + authorFirstName + " " + authorSurname;
+        return "Автор книги -" + authorFirstName + " " + authorSurname;
     }
 }
