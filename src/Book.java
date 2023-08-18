@@ -28,16 +28,16 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return Objects.equals(bookName, book.bookName);
+        return publishingYear == book.publishingYear && Objects.equals(bookName, book.bookName) && Objects.equals(authorName, book.authorName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(bookName);
+        return Objects.hash(bookName, authorName, publishingYear);
     }
 
     @Override
     public String toString(){
-        return "Название книги -" + bookName;
+        return "Название книги - " + bookName + "; Год издания - " + publishingYear;
     }
 }

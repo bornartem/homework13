@@ -22,16 +22,16 @@ public class Author {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Author author = (Author) o;
-        return Objects.equals(authorFirstName, author.authorFirstName);
+        return Objects.equals(authorFirstName, author.authorFirstName) && Objects.equals(authorSurname, author.authorSurname);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(authorFirstName);
+        return Objects.hash(authorFirstName, authorSurname);
     }
 
     @Override
     public String toString(){
-        return "Автор книги -" + authorFirstName + " " + authorSurname;
+        return "Автор книги - " + authorFirstName + " " + authorSurname;
     }
 }

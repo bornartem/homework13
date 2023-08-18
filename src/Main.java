@@ -13,7 +13,7 @@ public class Main {
         Book lordOfTheRings = new Book ("LordOfTheRings", lordOfTheRings1, 1954);
         Book lordOfTheRings2 = new Book ("LordOfTheRings", lordOfTheRings1, 1954);
         System.out.println(lordOfTheRings1);
-        System.out.println(lordOfTheRings);
+        System.out.println(lordOfTheRings); // сравниваем методом toString
         System.out.println(lordOfTheRings.equals(Caesar)); // сравниваем методы класса book, equals
         System.out.println(lordOfTheRings.equals(lordOfTheRings2)); // сравниваем методы класса book, equals
         System.out.println(lordOfTheRings1.equals(Caesar)); // сравниваем методы класса author, equals
